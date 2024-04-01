@@ -24,7 +24,7 @@ ul {
     list-style-type: none;
 }
 
-.navigation .nav {
+ .nav {
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -33,16 +33,20 @@ ul {
 text-decoration: none;
 }
 
-.navigation .nav:hover {
+ .nav:hover {
     color: #404bbf;
 }
 
-.navigation .nav:active {
+ .nav:active {
     color: #404bbf;
 }
 
-.navigation .nav:focus {
+ .nav:focus {
     color: #404bbf;
+}
+
+.address {
+    font-style: normal;
 }
 
  .mail, .tel {
@@ -52,7 +56,6 @@ text-decoration: none;
         letter-spacing: 0.02em;
         color: #434455;
         text-decoration: none;
-        font-style: normal;
 }
 
 .mail:hover, .tel:hover {
@@ -83,6 +86,10 @@ text-decoration: none;
     background-color: #404bbf;
 }
 
+.servicebutton:focus {
+    background-color: #404bbf;
+}
+
 
 .solutions {
     font-weight: 700;
@@ -103,7 +110,7 @@ text-decoration: none;
         text-transform: capitalize;
 }
 
-.strategy, .punctuality, .diligence, .technologies {
+.list_head {
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -111,7 +118,7 @@ text-decoration: none;
         color: #2e2f42;
 }
 
-.strat, .punct, .dill, .tech  {
+.list_features  {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
