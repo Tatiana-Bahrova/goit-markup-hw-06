@@ -22,6 +22,15 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
 }
 
+main {
+    flex-grow: 1;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .container {
 width: 1158px;
 padding-left: 15px;
