@@ -39,10 +39,13 @@ margin-left: auto;
 margin-right: auto;
 }
 
+.page-header {
+border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .navigation {
@@ -149,6 +152,8 @@ position: absolute;
     background-color: #2e2f42;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .service-button {
@@ -179,8 +184,6 @@ position: absolute;
 .solution-container {
 padding-top: 188px;
 padding-bottom: 188px;
-padding-left: 336px;
-padding-right: 334px;
 }
 
 .solutions {
@@ -190,9 +193,9 @@ padding-right: 334px;
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
-    width: 496px;
+    max-width: 496px;
     height: 120px;
-    margin-bottom: 48px;
+    margin: 0 auto 48px auto;
 }
 
 .list, .ourteam, .portf {
@@ -249,6 +252,11 @@ width: calc((100% - 3 * 24px) / 4 );
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.team-container {
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
 .name {
     font-weight: 500;
     font-size: 20px;
@@ -256,7 +264,7 @@ width: calc((100% - 3 * 24px) / 4 );
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .describe-team {
@@ -266,11 +274,16 @@ width: calc((100% - 3 * 24px) / 4 );
     text-align: center;
     color: #434455;
     margin-top: 8px;
-    padding-bottom: 32px;
 }
 
 .list-portfolio {
 width: calc((100% - 2 * 24px) / 3)
+}
+
+.portfolio-container {
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
 }
 
 .our-port {
@@ -279,8 +292,7 @@ width: calc((100% - 2 * 24px) / 3)
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-top: 32px;
-    padding-left: 16px;
+    margin-bottom: 8px;
 }
 
 .ul-portfolio {
@@ -301,9 +313,6 @@ width: calc((100% - 2 * 24px) / 3)
 
 .footer {
     background-color: #2e2f42;  
-}
-
-.footer-container {
    padding-top: 100px;
    padding-bottom: 100px;
 }
@@ -313,7 +322,6 @@ width: calc((100% - 2 * 24px) / 3)
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 16px;
     width: 264px;
     height: 72px;
 
@@ -323,7 +331,10 @@ width: calc((100% - 2 * 24px) / 3)
     color: #f4f4fd;
 }
 
-
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
 .section-padding {
     padding-bottom: 120px;
