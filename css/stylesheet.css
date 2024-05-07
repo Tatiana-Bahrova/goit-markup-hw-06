@@ -555,12 +555,8 @@ margin-left: 80px;
     border-radius: 4px;
     width: 264px;
     height: 40px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: inherit;
-}
-
-.footer-mail-input::placeholder {
-    font-family: "Roboto", sans-serif;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
@@ -569,10 +565,18 @@ margin-left: 80px;
     padding-left: 16px;
 }
 
+.footer-mail-input::placeholder {
+    color: #fff;   
+}
+
 .footer-btn-subscribe {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
     border-radius: 4px;
     padding: 8px 24px;
     min-width: 165px;
@@ -590,14 +594,6 @@ margin-left: 80px;
 
 .footer-send-icon {
     fill: #FFFFFF;
-}
-
-.footer-btn-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-      color: #fff;
 }
 
 .footer-send-icon {
@@ -651,7 +647,7 @@ margin-left: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -677,6 +673,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+}
+
+.contact-label-wrapper {
+    margin-bottom: 8px;
 }
 
 .contact-form-label {
@@ -812,12 +812,10 @@ margin-bottom: 16px;
     border: none;
     margin-left: auto;
     margin-right: auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
 
 .modal-form-button:hover, .modal-form-button:focus {
-    background-color: #404BBF;
-    border: #404BBF;
-    
+    background-color: #404BBF;  
 }
