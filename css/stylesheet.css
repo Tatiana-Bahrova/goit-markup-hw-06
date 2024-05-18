@@ -588,8 +588,7 @@ a {
         }
     
         .checkbox-label {
-            display: flex;
-            flex-wrap: wrap;
+            display: inline-flex;
             justify-content: center;
             align-items: center;
             font-size: 12px;
@@ -599,6 +598,7 @@ a {
         }
     
         .own-checkbox-span {
+            display: inline-flex;
             flex-shrink: 0;
             left: 8px;
             width: 16px;
@@ -1183,7 +1183,6 @@ a {
     position: absolute;
 }
 
-
 .footer-text.subscribe {
     text-align: center;
 }
@@ -1251,20 +1250,24 @@ a {
 .main-footer-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: start;
     }
 
 .logo-social-list-wrapper {
 display: flex;
 flex-wrap: wrap;
-justify-content: baseline;
+justify-content: start;
+align-items: baseline;
 gap: 24px;
 margin-left: 108px;
 }
 
 .footer-container {
     align-items: start;
+    width: 264px;
 }
+
 .footer-text {
 text-align: left;
 }
@@ -1275,12 +1278,67 @@ text-align: left;
     margin-bottom: 72px;
     align-items: start;
 }
+
 .footer-subscribe {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0;
 }
+
+.footer-text.subscribe {
+    text-align: start;
+}
+
+.footer-form-subscribe {
+    flex-direction: row;
+    gap: 24px;
+}
+
 .footer-ul { 
     height: 80px;
     margin-bottom: 0;
+}
+
+.footer-mail-input {
+    width: 264px;
+}
+}
+
+/*===== FOOTER-DESKTOP =====*/
+
+@media screen and (min-width: 1158px) {
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.main-footer-container {
+    flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: baseline;
+}
+
+.footer-social-media {
+    margin-bottom: 0;
+}
+
+.logo-social-list-wrapper {
+    margin-left: 0;
+   justify-content: center;
+   align-items: baseline;
+    gap: 0;
+}
+
+.footer-container {
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+    margin-right: 120px;
+}
+
+.footer-subscribe {
+    margin-left: 80px;
+    width: 453px;
 }
 }
