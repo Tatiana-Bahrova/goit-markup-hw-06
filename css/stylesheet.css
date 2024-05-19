@@ -178,6 +178,12 @@ a {
         overflow-y: auto;
         transform: translateX(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 72px 40px 40px 16px;
+    }
+
     }
     .mob-menu-container {
         position: relative;
@@ -230,11 +236,10 @@ a {
     }
 
     .mobile-address {
-        font-style: normal;
-        margin-top: 168px;
+        font-style: normal; 
         margin-bottom: 48px;
     }
-        
+  
     .address-li:not(:last-child) {
         padding-bottom: 24px;
     }
@@ -260,9 +265,9 @@ a {
 
     .mobile-social-ul {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
         gap: 40px;
+        width: 280px;
     }
 
     .mobile-social-li {
@@ -271,7 +276,6 @@ a {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        width: calc((100% - 3 * 40px) / 4);
     }
 
     .mobile-social-link {
