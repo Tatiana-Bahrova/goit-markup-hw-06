@@ -297,7 +297,7 @@ a {
 .mobile-social-link-icon {
     position: absolute;
 }
-}
+
 
 /*===== HEADER-TABLET =====*/
 
@@ -802,6 +802,7 @@ a {
         margin-right: auto;
     }
     .li-features {
+        padding-bottom: 0;
         width: calc((100% - 24px) / 2);
         }
 
@@ -822,7 +823,7 @@ a {
     .ul-features {
             column-gap: 24px;
             width: 1128px;
-            min-height: 224px;
+            min-height: 72px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -975,6 +976,7 @@ a {
     }
 
 .list-team {
+    margin-top: 0;
     width: calc((100% - 3 * 24px) / 4);
 }
 }
