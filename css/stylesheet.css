@@ -894,6 +894,10 @@ a {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.list-team:first-child {
+    margin-top: 0;
+}
+
 .team-container {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -964,6 +968,7 @@ a {
         justify-content: center;
         align-items: center;
         column-gap: 24px;
+        row-gap: 67px;
         }
 
 .list-team {
