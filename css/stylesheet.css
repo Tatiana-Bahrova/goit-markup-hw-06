@@ -755,8 +755,8 @@ a {
     padding-top: 96px;
 }
 
-.li-features {
-    padding-bottom: 72px;
+.li-features:not(:last-child) {
+    margin-bottom: 72px;
 }
 
 .list-head {
@@ -802,8 +802,11 @@ a {
         margin-right: auto;
     }
     .li-features {
-        padding-bottom: 0;
         width: calc((100% - 24px) / 2);
+        }
+
+        .li-features.techology, .li-features.diligence {
+            margin-bottom: 0;
         }
 
     .list-head {
@@ -964,7 +967,7 @@ a {
         }
 
 .list-team {
-    margin-top: 64px;
+    margin-top: 0;
 }
 }
 
@@ -976,7 +979,6 @@ a {
     }
 
 .list-team {
-    margin-top: 0;
     width: calc((100% - 3 * 24px) / 4);
 }
 }
